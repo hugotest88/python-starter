@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: Install Dependencies
-          command: make install
+          command: pip install -r requirements.txt
       - run:
           name: Run Tests
           command: make test
